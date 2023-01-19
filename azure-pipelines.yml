@@ -90,7 +90,7 @@ stages:
       vmImage: 'ubuntu-20.04'
     environment: dev
     variables:
-    - group: 'Space Game - web - Multistage'
+    - group: 'Release'
     strategy:
       runOnce:
         deploy:
@@ -113,7 +113,7 @@ stages:
       vmImage: 'ubuntu-20.04'
     environment: test
     variables:
-    - group: 'Space Game - web - Multistage'
+    - group: 'Release'
     strategy:
       runOnce:
         deploy:
@@ -135,7 +135,7 @@ stages:
       vmImage: 'ubuntu-20.04'
     environment: staging
     variables:
-    - group: 'Space Game - web - Multistage'
+    - group: 'Release'
     strategy:
       runOnce:
         deploy:
